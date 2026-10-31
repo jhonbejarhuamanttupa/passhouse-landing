@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="PassHouse: organiza el historial técnico de tu vivienda autoconstruida o ampliada en Lima Metropolitana.">
-  <title>PassHouse — Landing A</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PassHouse: conserva la historia técnica de tu vivienda. Organiza reparaciones, fotografías, instalaciones y ampliaciones en Lima Metropolitana.">
+  <meta name="theme-color" content="#102b47">
+  <title>PassHouse — Tu vivienda cambia, su historia permanece | Landing A</title>
   <style>
-    :root {--navy:#102840;--blue:#006caa;--light:#e7f4fc;--ink:#203347;--muted:#50657a;--line:#dbe7ee;--white:#fff}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#fff;font-family:Arial,'Segoe UI',sans-serif;line-height:1.55}
-    a{color:inherit}header{border-bottom:1px solid var(--line);background:#fff} .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-    .top{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{font-size:26px;font-weight:800;letter-spacing:-1.5px;color:var(--navy);text-decoration:none}.brand span{color:var(--blue)}
-    nav{display:flex;gap:22px;align-items:center;font-size:14px;font-weight:650;color:var(--navy)}nav a{text-decoration:none}nav a:hover{text-decoration:underline}
-    .hero{background:linear-gradient(116deg,#f3f9fd 0%,#eaf5fc 66%,#d8effb 100%);padding:80px 0 88px}
-    .hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:56px;align-items:center}
-    .tag{display:inline-flex;align-items:center;padding:8px 14px;background:#fff;border:1px solid #cadfeb;border-radius:100px;color:#21547b;font-size:13px;font-weight:700}
-    h1{color:var(--navy);font-size:clamp(35px,4.8vw,58px);letter-spacing:-2px;line-height:1.1;margin:22px 0 19px;font-weight:800}
-    h1 em{font-style:normal;color:var(--blue)}.lead{max-width:590px;font-size:19px;color:var(--muted);margin-bottom:28px}
-    .actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;padding:15px 23px;min-height:50px;align-items:center;justify-content:center;border-radius:11px;text-decoration:none;font-weight:750;transition:transform .15s}
-    .btn:hover{transform:translateY(-2px)}.primary{background:var(--blue);color:white}.outline{border:2px solid #b4d4e5;background:#fff;color:var(--navy)}
-    .small-note{margin-top:18px;color:#5e7284;font-size:12px}
-    .visual{position:relative;padding:18px 0}.visual-panel{box-shadow:0 22px 65px rgba(19,55,89,.16);background:white;border-radius:22px;padding:26px;border:1px solid #e5ebef}
-    .visual-header{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid #e4eef4;padding-bottom:16px;margin-bottom:18px}
-    .pill{display:inline-block;border-radius:40px;padding:6px 11px;background:#e8f4fb;color:#1c689a;font-weight:700;font-size:12px}
-    .home-art{width:100%;height:auto;background:#e9f4fa;border-radius:15px;display:block}
-    .item{display:flex;align-items:flex-start;gap:12px;padding:14px 3px;border-bottom:1px solid #e8eef2;font-size:14px}.item:last-child{border:0}
-    .icon{border-radius:9px;background:#eef7fc;color:var(--blue);min-width:38px;height:38px;display:grid;place-items:center;font-size:18px;font-weight:700}.item strong{display:block;color:var(--navy)}.item span{color:#64798c;font-size:12px}
-    section{padding:76px 0}.section-title{font-size:clamp(29px,3.3vw,42px);line-height:1.16;letter-spacing:-1px;color:var(--navy);margin:0 0 14px}.section-sub{color:var(--muted);font-size:17px;max-width:730px;margin:0 0 32px}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{border:1px solid var(--line);border-radius:17px;padding:25px;background:#fff}.card h3{color:var(--navy);font-size:20px;margin:14px 0 8px}.card p{color:var(--muted);font-size:15px;margin:0}.card .num{display:grid;place-items:center;background:var(--light);border-radius:12px;color:var(--blue);height:45px;width:45px;font-weight:800}
-    .shade{background:#f5f9fb}.cta{margin:35px auto 0;border-radius:22px;padding:40px;background:var(--navy);color:#fff;text-align:center}.cta h2{font-size:30px;margin:0 0 9px}.cta p{color:#d2e5f1;margin:0 auto 23px;max-width:690px}.cta .btn{background:#fff;color:var(--navy)}
-    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:13px}footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-    @media(max-width:800px){nav{gap:10px;font-size:12px}.hero{padding:48px 0}.hero-grid{grid-template-columns:1fr;gap:25px}.visual{max-width:540px}.cards{grid-template-columns:1fr}section{padding:52px 0}.top{flex-wrap:wrap;padding:15px 0}.cta{padding:28px 20px}} 
+    /* PASSHOUSE · VERSIÓN A | Diseño editorial, confianza y continuidad del hogar */
+    :root{--navy:#102b47;--blue:#0876b7;--sky:#eaf6fc;--teal:#198f8a;--orange:#ed873f;--ink:#22384b;--muted:#627587;--paper:#fcfcfa;--line:#dae7ef;--white:#fff;--shadow:0 24px 65px rgba(16,43,71,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,'Segoe UI',sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}a{color:inherit}a:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+    .wrap{width:min(1160px,calc(100% - 48px));margin:auto}.topline{background:var(--navy);color:#dceef5;text-align:center;font-size:12px;letter-spacing:.065em;padding:8px 12px}
+    header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;box-shadow:0 2px 16px rgba(16,43,71,.03)}.nav{display:flex;justify-content:space-between;align-items:center;gap:18px;min-height:80px}
+    .logo{display:flex;align-items:center;gap:11px;text-decoration:none}.logo-ico{display:grid;place-items:center;width:42px;height:42px;background:var(--sky);border-radius:11px;color:var(--blue)}.logo b{font-family:Montserrat,'Segoe UI',sans-serif;font-size:25px;letter-spacing:-1.3px;color:var(--navy)}.logo b span{color:var(--blue)}.logo small{display:block;font-size:10px;color:#728598;letter-spacing:.12em;text-transform:uppercase;line-height:1.2}
+    .navlinks{display:flex;gap:26px;align-items:center;font-weight:700;font-size:13px}.navlinks a{text-decoration:none}.navlinks a:hover{color:var(--blue)}.navlinks .nav-cta{background:var(--navy);color:#fff;padding:12px 18px;border-radius:10px}
+    .hero{background:radial-gradient(ellipse at 90% 10%,#cceaf6 0,transparent 49%),linear-gradient(125deg,#f8fcff 0%,#edf7fa 80%);overflow:hidden}.hero-inner{min-height:570px;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:68px;padding-bottom:77px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--teal)}.dot{width:8px;height:8px;border-radius:100%;background:var(--teal);display:inline-block}
+    h1,h2,h3{font-family:Montserrat,'Segoe UI',Arial,sans-serif;color:var(--navy)}h1{font-size:clamp(38px,4.5vw,61px);line-height:1.12;letter-spacing:-2px;margin:20px 0 22px;font-weight:850}h1 em{color:var(--blue);font-style:normal}.hero .lead{font-size:18px;color:#536b7e;max-width:550px;margin:0 0 29px}.buttons{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.btn{display:inline-flex;justify-content:center;align-items:center;gap:11px;padding:14px 21px;border-radius:10px;text-decoration:none;font-weight:800;font-size:14px;min-height:49px;transition:transform .16s,box-shadow .16s}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(16,43,71,.12)}.btn-orange{background:var(--orange);color:#122d42}.btn-white{background:white;color:var(--navy);border:1px solid #cedee9}.hero-note{font-size:12px;color:#668296;margin-top:18px}
+    .hero-art{background:#fff;box-shadow:var(--shadow);border:1px solid #dce8ee;border-radius:24px;padding:17px;transform:rotate(1.5deg);position:relative}.art-top{display:flex;justify-content:space-between;align-items:center;padding:8px 10px 13px;gap:8px}.art-top b{font-size:15px;color:var(--navy)}.art-top small{display:block;font-size:12px;color:#6c8293}.chip{border-radius:30px;background:#e6f6f3;color:#087c79;padding:5px 9px;font-size:11px;font-weight:800}
+    .house-svg{display:block;width:100%;height:auto;background:linear-gradient(155deg,#d9f1fb,#eefafc);border-radius:15px}.art-bottom{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:13px}.mini{background:#f4f8fa;border:1px solid #e6edf2;padding:9px;border-radius:9px;text-align:center}.mini b{font-size:11px;display:block;color:#173d59}.mini span{font-size:10px;color:#668091}.stamp{position:absolute;bottom:-17px;left:-19px;background:var(--navy);color:white;padding:12px 17px;border-radius:12px;box-shadow:0 12px 25px rgba(16,43,71,.19);font-size:12px;font-weight:700;transform:rotate(-4deg)}
+    section{padding:85px 0}.section-intro{max-width:770px;margin-bottom:34px}.kicker{color:var(--blue);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:11px}.section-title{font-size:clamp(29px,3.4vw,43px);line-height:1.18;letter-spacing:-1.25px;margin:10px 0 14px}.desc{color:var(--muted);font-size:17px;max-width:760px;margin:0}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.feature{background:#fff;border-radius:17px;border:1px solid var(--line);padding:28px 26px;box-shadow:0 8px 28px rgba(18,44,69,.03)}.feature .symbol{display:grid;place-items:center;width:54px;height:54px;border-radius:16px;background:#e9f5fb;font-size:25px;margin-bottom:15px}.feature h3{font-size:19px;letter-spacing:-.4px;margin:0 0 9px}.feature p{font-size:14px;color:var(--muted);margin:0}
+    .story{background:#eff6f8}.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}.quote{background:var(--navy);border-radius:23px;padding:40px;color:#fff;position:relative}.quote .quotemark{font-size:64px;color:#81c9de;line-height:.7;font-weight:900}.quote h3{font-size:32px;color:#fff;line-height:1.3;margin:20px 0}.quote p{color:#c7e0ec;font-size:14px;margin:0}.story-text p{font-size:16px;color:var(--muted)}.check{display:flex;align-items:flex-start;gap:12px;margin:18px 0;font-size:15px}.check strong{color:var(--navy)}.check span:first-child{background:#d7f3ee;color:#147b71;border-radius:50%;height:23px;min-width:23px;text-align:center;line-height:23px;font-weight:900}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:step}.step{border-top:3px solid #cae2ec;padding:22px 22px 15px 0}.step-num{font-size:42px;font-weight:850;letter-spacing:-2px;color:#b4d9e9}.step h3{font-size:21px;margin:8px 0}.step p{color:var(--muted);font-size:15px;margin:0}.fineprint{font-size:12px;color:#6f8191;margin-top:21px}
+    .end{background:var(--navy);padding:60px 0;color:white}.end-grid{display:flex;align-items:center;justify-content:space-between;gap:30px}.end h2{font-size:clamp(28px,3vw,39px);color:white;line-height:1.16;margin:0 0 10px}.end p{color:#c9e2ed;margin:0;max-width:630px}.footer{background:#0a2033;color:#bdd1df;padding:26px 0;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer a{color:#e7f5ff}
+    @media(max-width:940px){.hero-inner{gap:20px}.navlinks{gap:14px}.hero-art{transform:none}.story-grid{gap:27px}}
+    @media(max-width:760px){.wrap{width:min(100% - 32px,520px)}.nav{flex-wrap:wrap;padding:14px 0}.navlinks{width:100%;justify-content:space-between;gap:8px;flex-wrap:wrap}.navlinks .nav-cta{padding:9px 11px}.hero-inner,.story-grid{grid-template-columns:1fr;padding-top:42px;padding-bottom:65px}.hero-art{max-width:520px;margin:10px auto 0}.three,.steps{grid-template-columns:1fr}section{padding:58px 0}.end-grid{flex-direction:column;align-items:flex-start}.quote{padding:26px}.stamp{left:4px}.logo b{font-size:22px}}
   </style>
 </head>
 <body>
-<header><div class="wrap top">
- <a class="brand" href="#inicio">Pass<span>House</span></a>
- <nav aria-label="Menú principal"><a href="#beneficios">Beneficios</a><a href="#funcionamiento">Cómo funciona</a><a href="https://sites.google.com/view/passhouse/p%C3%A1gina-principal" target="_blank" rel="noopener noreferrer">Sitio oficial</a></nav>
-</div></header>
-<main id="inicio">
- <div class="hero"><div class="wrap hero-grid">
-  <div><div class="tag">Pasaporte Digital de Vivienda · Lima Metropolitana</div>
-   <h1>Tu vivienda cambia,<br><em>su historia permanece.</em></h1><p class="lead">Organiza en un solo lugar el historial técnico de tu hogar: reparaciones, ampliaciones, instalaciones, fotografías y boletas. Consulta lo que se hizo antes de volver a intervenir tu vivienda.</p>
-   <div class="actions"><a class="btn primary" href="https://sites.google.com/view/passhouse/p%C3%A1gina-principal" target="_blank" rel="noopener noreferrer">Conoce PassHouse</a><a class="btn outline" href="#funcionamiento">Ver cómo funciona</a></div>
-   <p class="small-note">Propuesta académica de PassHouse · Landing A</p>
-  </div>
-  <div class="visual" aria-label="Ilustración de una vivienda y ejemplos de registros"><div class="visual-panel">
-   <div class="visual-header"><div><strong style="color:#102840">Historial de la vivienda</strong><div style="font-size:12px;color:#74889b">Ejemplo ilustrativo de organización</div></div><span class="pill">Mi hogar</span></div>
-   <svg class="home-art" viewBox="0 0 510 255" role="img" aria-label="Dibujo de una vivienda de dos pisos"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d4ebf7"/><stop offset="1" stop-color="#f2f9fd"/></linearGradient></defs><rect width="510" height="255" fill="url(#bg)"/><circle cx="415" cy="55" r="29" fill="#f5c56a"/><path d="M85 139 L245 30 L405 139" fill="none" stroke="#145d8c" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/><path d="M126 129 L245 48 L364 129 L364 233 L126 233Z" fill="#fff" stroke="#1c749e" stroke-width="5"/><rect x="211" y="150" width="69" height="83" fill="#d5eaf3" stroke="#1c749e" stroke-width="5"/><circle cx="265" cy="195" r="4" fill="#17638f"/><rect x="150" y="139" width="43" height="47" fill="#d5eaf3" stroke="#1c749e" stroke-width="4"/><rect x="299" y="139" width="43" height="47" fill="#d5eaf3" stroke="#1c749e" stroke-width="4"/><path d="M95 233 H417" stroke="#145d8c" stroke-width="7" stroke-linecap="round"/></svg>
-   <div class="item"><div class="icon">1</div><div><strong>Reparaciones e instalaciones</strong><span>Antecedentes de intervenciones en la vivienda</span></div></div>
-   <div class="item"><div class="icon">2</div><div><strong>Fotografías y boletas</strong><span>Documentación técnica y comprobantes</span></div></div>
-   <div class="item"><div class="icon">3</div><div><strong>Ampliaciones por etapas</strong><span>Información organizada para futuras consultas</span></div></div>
-  </div></div>
- </div></div>
- <section id="beneficios"><div class="wrap"><h2 class="section-title">Tu casa tiene una historia. Consérvala.</h2><p class="section-sub">Cuando una vivienda se construye o amplía por etapas, la información puede quedar repartida entre fotos, papeles y conversaciones. PassHouse plantea reunirla en un solo lugar.</p>
- <div class="cards"><article class="card"><div class="num">01</div><h3>Conserva antecedentes</h3><p>Mantén un registro de las reparaciones, las ampliaciones y las instalaciones realizadas en tu hogar.</p></article>
- <article class="card"><div class="num">02</div><h3>Organiza documentos</h3><p>Guarda fotografías de instalaciones, boletas y comprobantes para consultarlos cuando los necesites.</p></article>
- <article class="card"><div class="num">03</div><h3>Consulta antes de reparar</h3><p>Revisa la información disponible antes de intervenir nuevamente una pared o ambiente.</p></article></div></div></section>
- <section id="funcionamiento" class="shade"><div class="wrap"><h2 class="section-title">¿Cómo funciona la propuesta?</h2><p class="section-sub">Un proceso pensado para propietarios de 30 a 55 años de viviendas autoconstruidas o ampliadas progresivamente en Lima Metropolitana.</p>
- <div class="cards"><article class="card"><div class="num">1</div><h3>Registra</h3><p>Conserva la información de los trabajos realizados: fotos, reparaciones, instalaciones y boletas.</p></article>
- <article class="card"><div class="num">2</div><h3>Organiza</h3><p>Ubica la documentación por ambientes y revisa el historial cronológico de las intervenciones.</p></article>
- <article class="card"><div class="num">3</div><h3>Consulta</h3><p>Recupera los antecedentes técnicos cuando planifiques una reparación o ampliación.</p></article></div>
- <div class="cta"><h2>La historia de tu casa merece conservarse</h2><p>PassHouse propone que la información de tu vivienda acompañe cada nueva etapa de construcción y mantenimiento.</p><a class="btn" href="https://sites.google.com/view/passhouse/p%C3%A1gina-principal" target="_blank" rel="noopener noreferrer">Conocer el proyecto PassHouse</a></div></div></section>
-</main>
-<footer><div class="wrap"><span><strong>PassHouse</strong> · Proyecto académico UPC</span><span>Landing A · <a href="https://sites.google.com/view/passhouse/p%C3%A1gina-principal" target="_blank" rel="noopener noreferrer">Visitar Google Sites</a></span></div></footer>
-</body></html>
+  <div class="topline">PASSHOUSE · PASAPORTE DIGITAL DE VIVIENDA · LIMA METROPOLITANA</div>
+  <header><div class="wrap nav">
+    <a class="logo" href="#inicio" aria-label="PassHouse, volver al inicio"><span class="logo-ico" aria-hidden="true">⌂</span><span><b>Pass<span>House</span></b><small>Historial técnico de tu hogar</small></span></a>
+    <nav class="navlinks" aria-label="Navegación"><a href="#beneficios">Beneficios</a><a href="#historia">Nuestra propuesta</a><a href="#como-funciona">Cómo funciona</a><a class="nav-cta" href="version-b/">Ver versión B ↗</a></nav>
+  </div></header>
+  <main id="inicio">
+    <div class="hero"><div class="wrap hero-inner">
+      <div><div class="eyebrow"><span class="dot"></span> Tu hogar tiene una historia que vale cuidar</div>
+        <h1>Tu vivienda cambia.<br><em>Su historia permanece.</em></h1>
+        <p class="lead">Con PassHouse, la información técnica de tu hogar puede mantenerse organizada: fotografías, reparaciones, ampliaciones e instalaciones, todo pensado para cuando necesites volver a consultar.</p>
+        <div class="buttons"><a class="btn btn-orange" href="#como-funciona">Descubre cómo funciona <span aria-hidden="true">→</span></a><a class="btn btn-white" href="https://sites.google.com/view/passhouse/p%C3%A1gina-principal" target="_blank" rel="noopener noreferrer">Ir al sitio original ↗</a></div>
+        <p class="hero-note">Propuesta académica para propietarios de viviendas ampliadas por etapas en Lima Metropolitana.</p>
+      </div>
+      <div class="hero-art" aria-label="Ilustración de vivienda familiar en ampliación y registros organizados">
+        <div class="art-top"><div><b>La historia de mi vivienda</b><small>Vista ilustrativa del registro técnico</small></div><span class="chip">Organizado</span></div>
+        <svg class="house-svg" viewBox="0 0 510 305" role="img" aria-label="Vivienda de dos pisos con un patio, representando la casa y sus cambios por etapas">
+          <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c7e6f6"/><stop offset="1" stop-color="#eef9ff"/></linearGradient></defs>
+          <rect width="510" height="305" fill="url(#sky)"/><circle cx="431" cy="57" r="30" fill="#f5d78d"/><path d="M0 262Q92 223 173 257T360 244T510 260V305H0Z" fill="#bde1d5"/><path d="M51 250V164l135-103 134 103v86Z" fill="#fafefc" stroke="#1b648a" stroke-width="5"/><path d="M39 165 186 52 332 165" fill="none" stroke="#164b75" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/><rect x="101" y="177" width="58" height="73" rx="2" fill="#c1e7f4" stroke="#20688d" stroke-width="5"/><path d="M130 177v73M101 213h58" stroke="#20688d" stroke-width="4"/><rect x="208" y="177" width="60" height="73" fill="#d7e4e8" stroke="#20688d" stroke-width="5"/><circle cx="255" cy="216" r="4" fill="#20688d"/><rect x="145" y="113" width="83" height="50" fill="#c1e7f4" stroke="#20688d" stroke-width="4"/><path d="M186 113v50" stroke="#20688d" stroke-width="4"/><path d="M321 249h125V125h-125z" fill="#deae83" stroke="#a56d49" stroke-width="5"/><path d="M316 126h137M321 162h125M321 200h125" stroke="#a8754c" stroke-width="5"/><path d="M349 126V84h71v42" fill="#e4be9e" stroke="#9c7053" stroke-width="5"/><path d="M339 84h90" stroke="#a56d49" stroke-width="9"/><path d="M351 229v-61h60v61" fill="#374d54" opacity=".26"/><path d="M326 83h132" stroke="#a56d49" stroke-width="6" stroke-dasharray="12 7"/><path d="M452 261H36" stroke="#287e8d" stroke-width="6" stroke-linecap="round"/><circle cx="74" cy="238" r="12" fill="#52a89b"/><circle cx="477" cy="246" r="16" fill="#70b39f"/>
+        </svg>
+        <div class="art-bottom"><div class="mini"><b>Instalaciones</b><span>Fotos y detalles</span></div><div class="mini"><b>Reparaciones</b><span>Por fecha</span></div><div class="mini"><b>Ampliaciones</b><span>Por ambiente</span></div></div>
+        <div class="stamp">⌂ &nbsp; Una casa. Muchas etapas.</div>
+      </div>
+    </div></div>
+    <section id="beneficios"><div class="wrap"><div class="section-intro"><div class="kicker">El valor de recordar</div><h2 class="section-title">Lo importante no debería perderse entre papeles y mensajes.</h2><p class="desc">Una foto de una tubería, una boleta o el dato de una reparación pueden ayudarte años después. PassHouse propone reunir esos antecedentes.</p></div>
+      <div class="three"><article class="feature"><div class="symbol" aria-hidden="true">📷</div><h3>Fotografías de obra</h3><p>Conserva imágenes de instalaciones y cambios realizados antes de cubrir paredes o pisos.</p></article><article class="feature"><div class="symbol" aria-hidden="true">🧾</div><h3>Documentos a mano</h3><p>Organiza boletas, comprobantes y otros datos asociados a los trabajos de tu hogar.</p></article><article class="feature"><div class="symbol" aria-hidden="true">🏠</div><h3>Historia por ambientes</h3><p>Consulta el registro de reparaciones y ampliaciones según la zona de la vivienda.</p></article></div>
+    </div></section>
+    <section class="story" id="historia"><div class="wrap story-grid">
+      <div class="quote"><div class="quotemark" aria-hidden="true">“</div><h3>¿Quién recuerda qué se hizo en el segundo piso hace tres años?</h3><p>Una pregunta cotidiana en viviendas que crecen y se reparan progresivamente.</p></div>
+      <div class="story-text"><div class="kicker">Pensado para tu día a día</div><h2 class="section-title">Tu casa evoluciona.<br>Su información también debería hacerlo.</h2><p>Los propietarios de viviendas autoconstruidas o ampliadas por etapas suelen guardar datos en conversaciones, carpetas y fotografías separadas.</p><div class="check"><span>✓</span><div><strong>Más orden:</strong> reúne información técnica dispersa.</div></div><div class="check"><span>✓</span><div><strong>Más claridad:</strong> revisa lo que se hizo y cuándo.</div></div><div class="check"><span>✓</span><div><strong>Mejores decisiones:</strong> consulta antecedentes antes de una nueva intervención.</div></div></div>
+    </div></section>
+    <section id="como-funciona"><div class="wrap"><div class="section-intro"><div class="kicker">Simple de entender</div><h2 class="section-title">Así se plantea el uso de PassHouse</h2><p class="desc">Un proceso de tres momentos para mantener un historial consultable de la vivienda.</p></div>
+      <div class="steps"><article class="step"><div class="step-num">01</div><h3>Registra</h3><p>Guarda información de instalaciones, reparaciones y ampliaciones, junto con fotografías o boletas.</p></article><article class="step"><div class="step-num">02</div><h3>Organiza</h3><p>Agrupa los antecedentes por ambientes y mantenlos en un historial cronológico.</p></article><article class="step"><div class="step-num">03</div><h3>Consulta</h3><p>Revisa lo que ocurrió antes de reparar, mantener o ampliar nuevamente tu vivienda.</p></article></div><p class="fineprint">* Representación conceptual de la propuesta de PassHouse; no corresponde a una aplicación operativa.</p>
+    </div></section>
+    <div class="end"><div class="wrap end-grid"><div><h2>Tu vivienda cambia.<br>Su historia técnica permanece.</h2><p>Descubre el proyecto PassHouse y conoce nuestra propuesta para organizar la memoria técnica del hogar.</p></div><a class="btn btn-orange" href="https://sites.google.com/view/passhouse/p%C3%A1gina-principal" target="_blank" rel="noopener noreferrer">Conocer PassHouse ↗</a></div></div>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><span>© PassHouse · Pasaporte Digital de Vivienda · Proyecto académico UPC</span><span>Versión A · <a href="version-b/">Comparar con la versión B</a> · <a href="https://sites.google.com/view/passhouse/quienes-somos" target="_blank" rel="noopener noreferrer">Google Sites</a></span></div></footer>
+</body>
+</html>
